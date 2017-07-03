@@ -63,7 +63,6 @@ names(both1) <- paste0( "/Users/Authorname/Desktop/QualAuto/",1:ncol(both1), ".t
 library(reshape2)
 both1 = melt(both1)
 both1 = both1$variable
-colnames(both1) = c("filename")
 filename = both1$filename
 ```
 Now we need to create the training and truth data sets.  We are grabbing matt's codes from the matt data set and that will be the "truth" data set.  Then we will stack on the "" for the rest of the values
