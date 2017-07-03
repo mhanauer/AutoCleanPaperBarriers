@@ -59,7 +59,7 @@ csv2txt("~/Desktop/QualAuto", labels = 1)
 set.seed(1)
 both1 <- replicate(401, rnorm(1, 0, 1))  
 
-names(both1) <- paste0( "/Users/matthewhanauer/Desktop/QualAuto/",1:ncol(both1), ".txt")
+names(both1) <- paste0( "/Users/Authorname/Desktop/QualAuto/",1:ncol(both1), ".txt")
 library(reshape2)
 both1 = melt(both1)
 both1 = both1$variable
